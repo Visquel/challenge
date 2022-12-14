@@ -1,0 +1,260 @@
+
+.frame {
+  /* Frame 95233 */
+
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 60px;
+
+  position: absolute;
+  width: 400px;
+  height: 557px;
+  left: 140px;
+  top: 166px;
+}
+  
+.heading {
+  /* Frame 95232 */
+
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+
+  width: 316px;
+  height: 103px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+  
+.form {
+  /* Frame 95228 */
+
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+
+  width: 400px;
+  height: 394px;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.h1 {
+  /* Welcome */
+
+
+  width: 255px;
+  height: 65px;
+
+  /* H1 */
+
+  margin-top: -10px;
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 65px;
+  /* identical to box height, or 108% */
+
+
+  /* 01 */
+
+  color: #000000;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.pRegular {
+  /* Studio management just got SO much easier. */
+
+
+  width: 316px;
+  height: 22px;
+
+  /* Paragraph/Regular */
+  margin-top: -40px;
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+
+
+  /* 01 */
+
+  color: #000000;
+
+  opacity: 0.7;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+  
+.labels {
+  /* Email */
+
+
+  width: 40px;
+  height: 22px;
+  align-self: flex-start;
+
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+
+
+  /* 01 */
+
+  color: #000000;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.fields {
+  /* Input Field */
+
+
+  box-sizing: border-box;
+  background: #FFFFFF;
+  color: black;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px 20px;
+  gap: 10px;
+
+  width: 400px;
+  height: 54px;
+
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.submitButton {
+  /* Button */
+
+
+  /* Auto layout */
+  
+  margin-top: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 56px;
+  gap: 10px;
+
+  width: 400px;
+  height: 54px;
+
+  background: #141414;
+  border-radius: 8px;
+  cursor: pointer;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.pMedium {
+  /* Already have an account? Sign In */
+
+
+  width: 234px;
+  height: 22px;
+
+  /* Paragraph/Medium */
+
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+
+
+  color: #000000;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+
+.content {
+  margin: -20px auto;
+  width: 400px;
+}
+
+.or {
+  text-align: center;
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.2) 0 0) left,
+    linear-gradient(rgba(0, 0, 0, 0.2) 0 0) right;
+  background-size: 45% 1px;
+  background-repeat: no-repeat;
+}
+
+.link {
+  text-decoration: underline;
+}
+  
