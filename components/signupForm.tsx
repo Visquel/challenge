@@ -7,27 +7,25 @@ import Router from 'next/router'
 
 export default Signup;
 
+  const loginSchema = Yup.object().shape({
+    password: Yup.string()
+      .required("Incorrect email address or password"),
+    email: Yup.string()
+      .email("Invalid email")
+      .required("Please enter your email in the name@website.com format")
+  });
+
+  const handleSubmit = (values: any, { setSubmitting }: any) => {
+    setTimeout(() => {
+        setSubmitting(false);
+        Router.push({
+            pathname: '/success',
+            query: { email: values.email, password: values.password }
+        })
+    }, 500);
+  };  
+
 function Signup() {
-
-    const loginSchema = Yup.object().shape({
-        password: Yup.string()
-          .required("Incorrect email address or password"),
-        email: Yup.string()
-          .email("Invalid email")
-          .required("Please enter your email in the name@website.com format")
-      });
-
-
-    const handleSubmit = (values: any, { setSubmitting }: any) => {
-        setTimeout(() => {
-            setSubmitting(false);
-            Router.push({
-                pathname: '/success',
-                query: { email: values.email, password: values.password }
-            })
-        }, 500);
-    };
-
 
     return (
         <>

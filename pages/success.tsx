@@ -1,14 +1,12 @@
 import SuccessInfo from "../components/successInfo";
 import RightSide from "../components/rightSide";
 import styles from '../styles/Home.module.css'
-import { useEffect } from "react";
 import { useRouter } from 'next/router'
 
 
 export default function Root() {
 
     const router = useRouter();
-    useEffect(() => {}, [router.query]);
 
     const userInput = {
         email: router.query.email,
