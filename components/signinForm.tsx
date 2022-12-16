@@ -20,7 +20,10 @@ function Signin() {
       const handleSubmit = (values: any, { setSubmitting }: any) => {
         setTimeout(() => {
           setSubmitting(false);
-          Router.push('/dashboard')
+          Router.push({
+            pathname: '/dashboard',
+            query: { email: values.email, password: values.password }
+        })
         }, 500);
       };
 

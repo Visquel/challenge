@@ -4,8 +4,7 @@ import Router from 'next/router'
 
 export default SuccessInfo;
 
-function SuccessInfo() {
-
+function SuccessInfo(props: any) {
 
     return (
         <>
@@ -19,7 +18,17 @@ function SuccessInfo() {
                 
                 <h2 className={successStyles.h2}>Success!</h2>
                 <p className={successStyles.pRegular}>Your account has been created successfully, lets help you set us up your studio.</p>
-                <button className={successStyles.continueButton} onClick={() => Router.push('/dashboard')}>Continue</button>
+                <button 
+                    className={successStyles.continueButton} 
+                    onClick={() => Router.push(
+                        {
+                            pathname: '/dashboard', 
+                            query: {email: props.values.email, password: props.values.password}
+                        })
+                    }
+                >
+                  Continue
+                </button>
             </div>
         </div>
 

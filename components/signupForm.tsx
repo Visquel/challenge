@@ -18,12 +18,14 @@ function Signup() {
       });
 
 
-
     const handleSubmit = (values: any, { setSubmitting }: any) => {
-    setTimeout(() => {
-        setSubmitting(false);
-        Router.push('/success')
-    }, 500);
+        setTimeout(() => {
+            setSubmitting(false);
+            Router.push({
+                pathname: '/success',
+                query: { email: values.email, password: values.password }
+            })
+        }, 500);
     };
 
 
