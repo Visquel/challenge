@@ -1,0 +1,206 @@
+
+.frame {
+    /* Frame 95233 */
+  
+  
+    /* Auto layout */
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 60px;
+  
+    position: absolute;
+    width: 400px;
+    height: 557px;
+    left: 140px;
+    top: 166px;
+  }
+  
+  .h2 {
+    /* Success! */
+
+    /* H2 */
+
+    font-family: 'Satoshi';
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 60px;
+    margin-top: 120px;
+    /* or 150% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  
+  .pRegular {
+    /* Studio management just got SO much easier. */
+  
+  
+    width: 380px;
+    height: 54px;
+  
+    /* Paragraph/Regular */
+    text-align: center;
+    margin-top: -50px;
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+  
+  
+    /* 01 */
+  
+    color: #000000;
+  
+    opacity: 0.7;
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  
+  .continueButton {
+    /* Button */
+
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 56px;
+    gap: 8px;
+    margin-top: -40px;
+    cursor: pointer;
+
+    width: 417px;
+    height: 54px;
+
+    /* Primary / 03 */
+
+    background: #000000;
+    border-radius: 8px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  
+  .pMedium {
+    /* Already have an account? Sign In */
+  
+  
+    width: 234px;
+    height: 22px;
+  
+    /* Paragraph/Medium */
+  
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+  
+  
+    color: #000000;
+  
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+  }
+  
+  .content {
+    margin: -20px auto;
+    width: 400px;
+  }
+  
+  .or {
+    text-align: center;
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    background:
+      linear-gradient(rgba(0, 0, 0, 0.2) 0 0) left,
+      linear-gradient(rgba(0, 0, 0, 0.2) 0 0) right;
+    background-size: 45% 1px;
+    background-repeat: no-repeat;
+  }
+  
+  .link {
+    text-decoration: underline;
+  }
+    
+  .errors {
+    color: red;
+    text-align: start;
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .checkmark {
+    /* Ellipse 536 */
+
+
+    position: absolute;
+    width: 81px;
+    height: 81px;
+    left: 15px;
+    top: 15px;
+    border-radius: 50%;
+    align-items: center;
+
+    /* 03 */
+
+    background: #FE9282;
+  }
+
+  .back {
+    /* Ellipse 537 */
+
+
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    left: 145px;
+    top: 0px;
+    border-radius: 50%;
+
+    /* 04 */
+
+    background: #FFF3F2;
+  }
+
+  .img {
+    padding: 21px;
+    padding-top: 28px;
+  }

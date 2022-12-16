@@ -1,4 +1,4 @@
-import SigninForm from "../components/signinForm";
+import SignupForm from "../components/signupForm";
 import RightSide from "../components/rightSide";
 import styles from '../styles/Home.module.css'
 
@@ -7,7 +7,7 @@ export default function Root() {
     <>
       <div className={styles.container}>
         <div className={styles.areaA}>
-          <SigninForm></SigninForm>
+          <SignupForm></SignupForm>
         </div>
 
         <div className={styles.areaB}>

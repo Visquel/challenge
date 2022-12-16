@@ -1,19 +1,14 @@
-import Signin from "./signin";
-import RightSide from "./rightSide";
+import RightSide from "../components/rightSide";
 import styles from '../styles/Home.module.css'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Signin from "./signin";
 
 export default function Root() {
   return (
-    <>
-      <div className={styles.container}>
-        <div className={styles.areaA}>
-          <Signin></Signin>
-        </div>
 
-        <div className={styles.areaB}>
-          <RightSide></RightSide>
-        </div>
-      </div>
+    
+    <>
+      <Signin />
     </>
   )
 }
