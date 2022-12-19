@@ -1,17 +1,15 @@
 import SuccessInfo from "../components/successInfo";
 import RightSide from "../components/rightSide";
-import styles from '../styles/Home.module.css'
-import { useRouter } from 'next/router'
-
+import styles from "../styles/Home.module.css";
+import { useRouter } from "next/router";
 
 export default function Root() {
+  const router = useRouter();
 
-    const router = useRouter();
-
-    const userInput = {
-        email: router.query.email,
-        password: router.query.password
-    }
+  const userInput = {
+    email: router.query.email,
+    password: router.query.password,
+  };
 
   return (
     <>
@@ -21,9 +19,9 @@ export default function Root() {
         </div>
 
         <div className={styles.areaB}>
-          <RightSide></RightSide>
+          <RightSide />
         </div>
       </div>
     </>
-  )
+  );
 }

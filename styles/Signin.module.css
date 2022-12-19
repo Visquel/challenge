@@ -1,7 +1,5 @@
-
 .frame {
   /* Frame 95233 */
-
 
   /* Auto layout */
 
@@ -17,10 +15,9 @@
   left: 140px;
   top: 166px;
 }
-  
+
 .heading {
   /* Frame 95232 */
-
 
   /* Auto layout */
 
@@ -39,10 +36,9 @@
   order: 0;
   flex-grow: 0;
 }
-  
+
 .form {
   /* Frame 95228 */
-
 
   /* Auto layout */
 
@@ -55,7 +51,6 @@
   width: 400px;
   height: 394px;
 
-
   /* Inside auto layout */
 
   flex: none;
@@ -66,25 +61,22 @@
 .h1 {
   /* Welcome */
 
-
   width: 404px;
   height: 65px;
 
   /* H1 */
 
   margin-top: -10px;
-  font-family: 'Satoshi';
+  font-family: "Satoshi";
   font-style: normal;
   font-weight: 500;
   font-size: 60px;
   line-height: 65px;
   /* identical to box height, or 108% */
 
-
   /* 01 */
 
   color: #000000;
-
 
   /* Inside auto layout */
 
@@ -96,19 +88,17 @@
 .pRegular {
   /* Studio management just got SO much easier. */
 
-
   width: 316px;
   height: 22px;
 
   /* Paragraph/Regular */
   margin-top: -40px;
-  font-family: 'Satoshi';
+  font-family: "Satoshi";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   /* identical to box height */
-
 
   /* 01 */
 
@@ -122,28 +112,25 @@
   order: 1;
   flex-grow: 0;
 }
-  
+
 .labels {
   /* Email */
-
 
   width: 40px;
   height: 22px;
   align-self: flex-start;
 
   text-align: start !important;
-  font-family: 'Satoshi';
+  font-family: "Satoshi";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
   /* identical to box height */
 
-
   /* 01 */
 
   color: #000000;
-
 
   /* Inside auto layout */
 
@@ -155,9 +142,8 @@
 .fields {
   /* Input Field */
 
-
   box-sizing: border-box;
-  background: #FFFFFF;
+  background: #ffffff;
   color: black;
 
   /* Auto layout */
@@ -185,9 +171,8 @@
 .submitButton {
   /* Button */
 
-
   /* Auto layout */
-  
+
   margin-top: 32px;
   display: flex;
   flex-direction: row;
@@ -213,22 +198,19 @@
 .pMedium {
   /* Already have an account? Sign In */
 
-
   width: 234px;
   height: 22px;
 
   /* Paragraph/Medium */
 
-  font-family: 'Satoshi';
+  font-family: "Satoshi";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   /* identical to box height */
 
-
   color: #000000;
-
 
   /* Inside auto layout */
 
@@ -244,13 +226,12 @@
 
 .or {
   text-align: center;
-  font-family: 'Satoshi';
+  font-family: "Satoshi";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.2) 0 0) left,
+  background: linear-gradient(rgba(0, 0, 0, 0.2) 0 0) left,
     linear-gradient(rgba(0, 0, 0, 0.2) 0 0) right;
   background-size: 45% 1px;
   background-repeat: no-repeat;
@@ -259,11 +240,11 @@
 .link {
   text-decoration: underline;
 }
-  
+
 .errors {
   color: red;
   text-align: start;
-  font-family: 'Satoshi';
+  font-family: "Satoshi";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

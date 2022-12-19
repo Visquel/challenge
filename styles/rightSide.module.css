@@ -1,123 +1,120 @@
-
 .container {
-    width: 684px;
-    height: 660px;
-    position: relative;
+  width: 684px;
+  height: 660px;
+  position: relative;
 }
 
 .box {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 20px;
-    right: 730;
-    background: linear-gradient(89.79deg, #FFDEDD 0.17%, rgba(255, 222, 221, 0) 162.18%);
-    border-radius: 30px;
-
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 20px;
+  right: 730;
+  background: linear-gradient(
+    89.79deg,
+    #ffdedd 0.17%,
+    rgba(255, 222, 221, 0) 162.18%
+  );
+  border-radius: 30px;
 }
 
 .overlay {
-    z-index: 10;
-    width: 308px;
-    height: 641px;
-    margin-top: 300px;
-    margin-left: 100px;
-    background: url(../public/2.png);
+  z-index: 10;
+  width: 308px;
+  height: 641px;
+  margin-top: 300px;
+  margin-left: 100px;
+  background: url(../public/2.png);
 }
 
 .overlay2 {
-    z-index: 10;
-    width: 308px;
-    height: 641px;
-    margin-top: 300px;
-    margin-left: 400px;
-    background: url(../public/1.png);
+  z-index: 10;
+  width: 308px;
+  height: 641px;
+  margin-top: 300px;
+  margin-left: 400px;
+  background: url(../public/1.png);
 }
 
 .frame {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 11px;
-    
-    position: absolute;
-    width: 505px;
-    height: 32px;
-    left: 80px;
-    top: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 11px;
+
+  position: absolute;
+  width: 505px;
+  height: 32px;
+  left: 80px;
+  top: 150px;
 }
 
 .picture {
-    width: 32px;
-    height: 32px;
+  width: 32px;
+  height: 32px;
 
-    background: url(../public/image.png);
+  background: url(../public/image.png);
 }
 
 .name {
-    /* Felicia Key, Los Angeles */
+  /* Felicia Key, Los Angeles */
 
+  width: 462px;
+  height: 22px;
+  text-align: left;
 
-    width: 462px;
-    height: 22px;
-    text-align: left;
+  /* Paragraph/Medium */
 
-    /* Paragraph/Medium */
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
 
-    font-family: 'Satoshi';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 22px;
-    /* identical to box height */
+  color: #1b1a1f;
 
+  /* Inside auto layout */
 
-    color: #1B1A1F;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
 .description {
-    /* It’s been so easy and effortless to manage my agenda. Clients are now happier than ever, all my energies can be dedicated to them! */
+  /* It’s been so easy and effortless to manage my agenda. Clients are now happier than ever, all my energies can be dedicated to them! */
 
+  width: 462px;
+  height: 44px;
 
-    width: 462px;
-    height: 44px;
+  /* Paragraph/Regular */
 
-    /* Paragraph/Regular */
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  padding-left: 20px;
+  border-left: 3px solid #fe9282;
+  margin-left: 80px;
+  margin-top: 88px;
 
-    font-family: 'Satoshi';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    text-align: center;
-    padding-left: 20px;
-    border-left: 3px solid #FE9282;
-    margin-left: 80px;
-    margin-top: 88px;
+  color: #1b1a1f;
 
-    color: #1B1A1F;
+  /* Inside auto layout */
 
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .raitings {
-    width: 100px;
-    height: 20px;
-    margin-top: 100px;
-    margin-left: 80px;
+  width: 100px;
+  height: 20px;
+  margin-top: 100px;
+  margin-left: 80px;
 
-    background: url(../public/raitings.png);
+  background: url(../public/raitings.png);
 }
