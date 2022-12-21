@@ -5,17 +5,8 @@ interface Props {
   className: string;
 }
 
-const Label: React.FC<Props> = ({
-  text,
-  className
-}) => {
-  return (
-    <label
-      className={className}
-    >
-      {text}
-    </label>
-  );
+const Label: React.FC<Props> = ({ text, className }) => {
+  return <label className={className}>{text}</label>;
 };
 
 export default Label;

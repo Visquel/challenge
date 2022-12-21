@@ -2,7 +2,7 @@ import successStyles from "../styles/success.module.css";
 import Router from "next/router";
 import Button from "./Button";
 
-function SuccessInfo(props: { values: { email: string; password: string; }; }) {
+function SuccessInfo(props: { values: { email: any; password: any } }) {
   return (
     <>
       <div>

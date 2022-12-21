@@ -4,7 +4,7 @@ import * as Yup from "yup";
 import Link from "next/link";
 import Router from "next/router";
 import Button from "./Button";
-import Label from "./Label"
+import Label from "./Label";
 
 const loginSchema = Yup.object().shape({
   password: Yup.string().required("Incorrect email address or password"),
@@ -13,7 +13,10 @@ const loginSchema = Yup.object().shape({
     .required("Please enter your email in the name@website.com format"),
 });
 
-const handleSubmit = (values: { email: string; password: string; }, { setSubmitting }: any) => {
+const handleSubmit = (
+  values: { email: string; password: string },
+  { setSubmitting }: any
+) => {
   setTimeout(() => {
     setSubmitting(false);
     Router.push({
@@ -44,10 +47,7 @@ function Signin() {
               return (
                 <Form>
                   <div>
-                    <Label 
-                      className={signinStyles.labels} 
-                      text="Email" 
-                    />
+                    <Label className={signinStyles.labels} text="Email" />
                     <Field
                       type="email"
                       name="email"
@@ -61,10 +61,7 @@ function Signin() {
                     />
                   </div>
                   <div>
-                    <Label 
-                      className={signinStyles.labels} 
-                      text="Password" 
-                    />
+                    <Label className={signinStyles.labels} text="Password" />
                     <Field
                       type="password"
                       name="password"
@@ -78,9 +75,7 @@ function Signin() {
                     />
                   </div>
                   <Button
-                    onClick={() =>
-                      console.log("Submiting...")
-                    }
+                    onClick={() => console.log("Submiting...")}
                     className={signinStyles.submitButton}
                     type="submit"
                     disabled={isSubmitting}

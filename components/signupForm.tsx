@@ -1,10 +1,10 @@
-import signinStyles from "../styles/Signin.module.css";
+import signupStyles from "../styles/Signin.module.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import Link from "next/link";
 import Router from "next/router";
 import Button from "./Button";
-import Label from "./Label"
+import Label from "./Label";
 
 const loginSchema = Yup.object().shape({
   password: Yup.string().required("Incorrect email address or password"),
@@ -13,7 +13,10 @@ const loginSchema = Yup.object().shape({
     .required("Please enter your email in the name@website.com format"),
 });
 
-const handleSubmit = (values: { email: string; password: string; }, { setSubmitting }: any) => {
+const handleSubmit = (
+  values: { email: string; password: string },
+  { setSubmitting }: any
+) => {
   setTimeout(() => {
     setSubmitting(false);
     Router.push({
@@ -26,15 +29,15 @@ const handleSubmit = (values: { email: string; password: string; }, { setSubmitt
 function Signup() {
   return (
     <>
-      <div className={signinStyles.frame}>
-        <div className={signinStyles.heading}>
-          <h1 className={signinStyles.h1}>Welcome</h1>
-          <p className={signinStyles.pRegular}>
+      <div className={signupStyles.frame}>
+        <div className={signupStyles.heading}>
+          <h1 className={signupStyles.h1}>Welcome</h1>
+          <p className={signupStyles.pRegular}>
             Studio management just got SO much easier.
           </p>
         </div>
 
-        <div className={signinStyles.form}>
+        <div className={signupStyles.form}>
           <Formik
             initialValues={{ email: "", password: "" }}
             validationSchema={loginSchema}
@@ -44,44 +47,36 @@ function Signup() {
               return (
                 <Form>
                   <div>
-                    <Label 
-                      className={signinStyles.labels} 
-                      text="Email" 
-                    />
+                    <Label className={signupStyles.labels} text="Email" />
                     <Field
                       type="email"
                       name="email"
-                      className={signinStyles.fields}
+                      className={signupStyles.fields}
                       placeholder="Your email"
                     />
                     <ErrorMessage
                       name="email"
                       component="div"
-                      className={signinStyles.errors}
+                      className={signupStyles.errors}
                     />
                   </div>
                   <div>
-                    <Label 
-                      className={signinStyles.labels} 
-                      text="Password" 
-                    />
+                    <Label className={signupStyles.labels} text="Password" />
                     <Field
                       type="password"
                       name="password"
-                      className={signinStyles.fields}
+                      className={signupStyles.fields}
                       placeholder="Your password"
                     />
                     <ErrorMessage
                       name="password"
                       component="div"
-                      className={signinStyles.errors}
+                      className={signupStyles.errors}
                     />
                   </div>
                   <Button
-                    onClick={() =>
-                      console.log("Submiting...")
-                    }
-                    className={signinStyles.submitButton}
+                    onClick={() => console.log("Submiting...")}
+                    className={signupStyles.submitButton}
                     type="submit"
                     disabled={isSubmitting}
                     text="Sign Up"
@@ -90,12 +85,12 @@ function Signup() {
               );
             }}
           </Formik>
-          <div className={signinStyles.content}>
-            <p className={signinStyles.or}>or</p>
+          <div className={signupStyles.content}>
+            <p className={signupStyles.or}>or</p>
           </div>
-          <span className={signinStyles.pMedium}>
+          <span className={signupStyles.pMedium}>
             Already have an account?
-            <Link href="/" className={signinStyles.link}>
+            <Link href="/" className={signupStyles.link}>
               {" "}
               Sign in
             </Link>
